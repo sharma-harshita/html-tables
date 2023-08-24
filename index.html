@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML TABLES</h1>
+    <table border="2" cellSpacing="10" cellPadding="10" >
+        <thead bgcolor="#A9A9A9">
+            <tr>
+                <th>Name</th>
+                <th bgcolor="red">Age</th>
+                <th>Dept</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="lightblue">
+            <tr>
+                <td>John</td>
+                <td>27</td>
+                <td bgcolor="green">HR</td>
+                <td>190000</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>30</td>
+                <td>IT</td>
+                <td>450000</td>
+            </tr>
+            <tr>
+                <td>Sert</td>
+                <td>32</td>
+                <td>IT</td>
+                <td>24000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>COLSPAN</h1>
+    <table border="2" cellSpacing="10" cellPadding="10" >
+        <tr>
+            <th>Name</th>
+            <!-- <th>Address</th> -->
+            <!-- <th>Pincode</th> -->
+            <th colspan="2">Address</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Delhi</td>
+            <td>560014</td>
+            <td>10002</td>
+        </tr>
+        <tr>
+            <td>Harsh</td>
+            <td>Benaras</td>
+            <td>100322</td>
+            <td>202020</td>
+        </tr>
+    </table>
+
+    <h1>ROWSPAN</h1>
+     <table border="2" cellSpacing="10" cellPadding="10">
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+
+        </tr>
+        <tr>
+            <!-- <th>Age</th> -->
+            <td>23</td>
+            <td>23</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th>City</td>
+            <td>Goa</td>
+            <td>jk</td>
+            <td>DElhi</td>
+        </tr>
+    </table>
+</body>
+</html>
