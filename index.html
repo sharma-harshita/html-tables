@@ -6,82 +6,100 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HTML TABLES</h1>
-    <table border="2" cellSpacing="10" cellPadding="10" >
-        <thead bgcolor="#A9A9A9">
+    <h1>Tables</h1>
+    <table border="2" cellpadding="5" cellspacing="5" >
+        <thead>
             <tr>
-                <th>Name</th>
-                <th bgcolor="red">Age</th>
-                <th>Dept</th>
-                <th>Salary</th>
+                <th bgcolor="grey" >id</th>
+                <th bgcolor="grey">Name</th>
+                <th bgcolor="grey">Dept</th>
+                <th bgcolor="grey">Salary</th>
             </tr>
         </thead>
-        <tbody bgcolor="lightblue">
+        <tbody>
             <tr>
+                <td>1</td>
                 <td>John</td>
-                <td>27</td>
-                <td bgcolor="green">HR</td>
-                <td>190000</td>
+                <td>HR</td>
+                <td>27000</td>
             </tr>
             <tr>
+                <td>2</td>
                 <td>Doe</td>
-                <td>30</td>
-                <td>IT</td>
-                <td>450000</td>
+                <td bgcolor="red">Tech</td>
+                <td>10000</td>
             </tr>
             <tr>
-                <td>Sert</td>
-                <td>32</td>
-                <td>IT</td>
-                <td>24000</td>
+                <td>3</td>
+                <td>Shri</td>
+                <td>Sales</td>
+                <td>7000</td>
             </tr>
         </tbody>
     </table>
 
-    <h1>COLSPAN</h1>
-    <table border="2" cellSpacing="10" cellPadding="10" >
-        <tr>
-            <th>Name</th>
-            <!-- <th>Address</th> -->
-            <!-- <th>Pincode</th> -->
-            <th colspan="2">Address</th>
-            <th>Salary</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Delhi</td>
-            <td>560014</td>
-            <td>10002</td>
-        </tr>
-        <tr>
-            <td>Harsh</td>
-            <td>Benaras</td>
-            <td>100322</td>
-            <td>202020</td>
-        </tr>
+    <table border="2" cellpadding="5" cellspacing="5" >
+        <thead>
+            <tr>
+                <th bgcolor="grey" colspan="2">Name & ID</th>
+                <th bgcolor="grey">Dept</th>
+                <th bgcolor="grey">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>HR</td>
+                <td>27000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Doe</td>
+                <td bgcolor="red">Tech</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shri</td>
+                <td>Sales</td>
+                <td>7000</td>
+            </tr>
+        </tbody>
     </table>
 
-    <h1>ROWSPAN</h1>
-     <table border="2" cellSpacing="10" cellPadding="10">
-        <tr>
-            <th rowspan="2">Name</th>
-            <td>X</td>
-            <td>Y</td>
-            <td>Z</td>
-
-        </tr>
-        <tr>
-            <!-- <th>Age</th> -->
-            <td>23</td>
-            <td>23</td>
-            <td>23</td>
-        </tr>
-        <tr>
-            <th>City</td>
-            <td>Goa</td>
-            <td>jk</td>
-            <td>DElhi</td>
-        </tr>
+    <table border="2" cellpadding="5" cellspacing="5" >
+        <thead>
+            <tr>
+                <th bgcolor="grey">ID</th>
+                <th bgcolor="grey">Name</th>
+                <th bgcolor="grey">Dept</th>
+                <th bgcolor="grey">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>HR</td>
+                <td>27000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Doe</td>
+                <td bgcolor="red">Tech</td>
+                <td rowspan="2">10000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shri</td>
+                <td>Sales</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
+
+<!-- tr = table row 
+td = table data
+th = table heading -->
